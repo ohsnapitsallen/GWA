@@ -18,6 +18,6 @@ def highestgwa():
             finalstr = str(final)
         #Locate the line where the highest GWA is located
             if finalstr in line:
-                print(line)
+                return line
 #Print the student's name and their GWA
 print("The student with the highest GWA is", highestgwa())
