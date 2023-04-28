@@ -12,9 +12,11 @@ def highestgwa():
             gwas = list(map(float, re.findall("\d+\.\d+", line)))
             #Find the highest GWA in the file
             for i in gwas:
-                highgwa = min(final, i)
+                final = min(final, i)
         #Convert float to string
         for line in lines:
-            finalstr = str(highgwa)
-#Locate the line where the highest GWA is located
+            finalstr = str(final)
+        #Locate the line where the highest GWA is located
+            if finalstr in line:
+                print(line)
 #Print the student's name and their GWA
