@@ -7,8 +7,9 @@ def highestgwa():
     with open("gwalist.txt", "r") as input_file:
         lines = input_file.readlines()
         final = math.inf
-#Open file of list of students with their GWA
-#Recognize all floats within the file
+        #Recognize all floats within the file
+        for line in lines:
+            gwas = list(map(float, re.findall("\d+\.\d+", line)))
 #Find the highest GWA in the file
 #Convert float to string
 #Locate the line where the highest GWA is located
