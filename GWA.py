@@ -1,3 +1,6 @@
+import math
+import re
+
 #Create a function
 #Open file of list of students with their GWA
 #Recognize all floats within the file
