@@ -13,6 +13,8 @@ def highestgwa():
             #Find the highest GWA in the file
             for i in gwas:
                 highgwa = min(final, i)
-#Convert float to string
+        #Convert float to string
+        for line in lines:
+            finalstr = str(highgwa)
 #Locate the line where the highest GWA is located
 #Print the student's name and their GWA
