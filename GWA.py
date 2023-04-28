@@ -20,3 +20,4 @@ def highestgwa():
             if finalstr in line:
                 print(line)
 #Print the student's name and their GWA
+print("The student with the highest GWA is", highestgwa())
